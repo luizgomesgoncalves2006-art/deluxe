@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deluxe Padaria e Confeitaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;0,800;1,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo-info">📍 Estr. do Portela, 356 — Madureira &nbsp; • &nbsp; (21) 99427-9098</div>
+
+    <header>
+        <a class="logo" href="#inicio">
+    <img src="imagens/ChatGPT Image 17 de set. de 2026, 17_00_19.png" alt="Logo Deluxe">
+    
+    <div>
+        Deluxe
+        <span>PADARIA E CONFEITARIA</span>
+    </div>
+</a>
+
+        <nav>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner" id="inicio">
+            <div class="banner-texto">
+                <p class="etiqueta">PADARIA E CONFEITARIA</p>
+                <h1>Sabor que faz parte do seu dia.</h1>
+                <p>Escolha seu lanche, seu doce favorito e faça seu pedido de forma simples pelo WhatsApp.</p>
+                <a class="botao botao-dourado" href="#cardapio">Ver cardápio</a>
+                        <div class="banner-visual">
+    <img class="banner-imagem" src="imagens/banner-ifood.png" alt="Deluxe também está no iFood">
+</div>
+        </section>
+
+        <section class="cardapio" id="cardapio">
+            <div class="titulo-secao">
+                <div>
+                    <p class="etiqueta etiqueta-vinho">ESCOLHA O SEU FAVORITO</p>
+                    <h2>Cardápio Deluxe</h2>
+                </div>
+
+                <p>Confira nossos lanches, combos e doces especiais.</p>
+            </div>
+
+            <h3 class="categoria">Lanches e combos</h3>
+
+            <div class="grade-produtos">
+                <article class="produto">
+                    <img src="imagens/mistos-quentes.png" alt="Misto quente">
+                    <div>
+                        <h4>Mistos quentes</h4>
+                        <p>Pão francês prensado na chapa, com queijo prato e presunto ou queijo minas.</p>
+                        <strong>A partir de R$ 13,99</strong>
+                        <button onclick="pedirProduto('Mistos quentes')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/tapioca.png" alt="Tapioca recheada">
+                    <div>
+                        <h4>Tapioca recheada</h4>
+                        <p>Tapioca bem recheada para você escolher o sabor que mais gosta.</p>
+                        <strong>R$ 21,90</strong>
+                        <button onclick="pedirProduto('Tapioca recheada')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/combos.png" alt="Combo Deluxe">
+                    <div>
+                        <h4>Combos Deluxe</h4>
+                        <p>Combinações especiais para uma pessoa ou para compartilhar.</p>
+                        <strong>A partir de R$ 19,99</strong>
+                        <button onclick="pedirProduto('Combo Deluxe')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/pao-com-ovo.png" alt="Pão com ovo">
+                    <div>
+                        <h4>Pão com ovo</h4>
+                        <p>Pão quentinho e crocante com ovo feito na chapa.</p>
+                        <strong>R$ 11,99</strong>
+                        <button onclick="pedirProduto('Pão com ovo')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/sanduiche.png" alt="Sanduíche de mortadela">
+                    <div>
+                        <h4>Sanduíches</h4>
+                        <p>Opções com mortadela, queijo e outros recheios deliciosos.</p>
+                        <strong>A partir de R$ 11,90</strong>
+                        <button onclick="pedirProduto('Sanduíche')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/pao-na-chapa.png" alt="Pão na chapa">
+                    <div>
+                        <h4>Pão na chapa</h4>
+                        <p>Pão fresquinho tostado na chapa com manteiga derretida.</p>
+                        <strong>R$ 6,50</strong>
+                        <button onclick="pedirProduto('Pão na chapa com manteiga')">Eu quero</button>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="categoria">Doces e sobremesas</h3>
+
+            <div class="grade-produtos">
+                <article class="produto">
+                    <img src="imagens/bombom-de-travessa.png" alt="Bombom de travessa">
+                    <div>
+                        <h4>Bombom de travessa</h4>
+                        <p>Camadas cremosas de chocolate e creme branco.</p>
+                        <strong>R$ 85,00</strong>
+                        <button onclick="pedirProduto('Bombom de travessa')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/pudim.png" alt="Pudim">
+                    <div>
+                        <h4>Pudim</h4>
+                        <p>O clássico pudim cremoso com calda de caramelo.</p>
+                        <strong>R$ 50,00</strong>
+                        <button onclick="pedirProduto('Pudim')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/cheesecake.png" alt="Cheesecake">
+                    <div>
+                        <h4>Cheesecake</h4>
+                        <p>Cheesecake cremoso com cobertura de frutas vermelhas.</p>
+                        <strong>R$ 90,00</strong>
+                        <button onclick="pedirProduto('Cheesecake')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/rabanada.png" alt="Rabanada recheada">
+                    <div>
+                        <h4>Rabanada recheada</h4>
+                        <p>Rabanada dourada, com recheio cremoso e toque de canela.</p>
+                        <strong>R$ 7,50/un.</strong>
+                        <button onclick="pedirProduto('Rabanada recheada')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/pave.png" alt="Pavê">
+                    <div>
+                        <h4>Pavê</h4>
+                        <p>Camadas de biscoito, creme e chocolate.</p>
+                        <strong>R$ 90,00</strong>
+                        <button onclick="pedirProduto('Pavê')">Eu quero</button>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="imagens/chocotone-trufado.png" alt="Chocotone trufado">
+                    <div>
+                        <h4>Chocotone trufado</h4>
+                        <p>Chocotone recheado com muito creme de chocolate.</p>
+                        <strong>R$ 75,00/un.</strong>
+                        <button onclick="pedirProduto('Chocotone trufado')">Eu quero</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div>
+                <p class="etiqueta">VENHA À DELUXE</p>
+                <h2>Seu pedido está a poucos cliques.</h2>
+            </div>
+
+            <div class="contato-itens">
+                <p>
+                    <b>Horários</b><br>
+                    Seg. a sáb.: 06h às 20h<br>
+                    Dom. e feriados: 06h às 15h
+                </p>
+
+                <p>
+                    <b>Endereço</b><br>
+                    Estr. do Portela, 356<br>
+                    Madureira — RJ
+                </p>
+
+                <p>
+    <b>Fale conosco</b><br>
+    WhatsApp: (21) 99427-9098<br>
+    <a href="https://www.instagram.com/padariadeluxe/?hl=en" target="_blank">
+        Instagram da Deluxe
+    </a><br>
+    <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/deluxe-padaria-salgados--doces-osvaldo-cruz/369b4bf9-3805-4209-b3e2-3b54b7cff091" target="_blank">
+        Peça pelo iFood
+    </a>
+</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>Deluxe Padaria e Confeitaria</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

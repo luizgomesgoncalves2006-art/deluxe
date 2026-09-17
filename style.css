@@ -1,0 +1,485 @@
+:root {
+    --vinho: #741711;
+    --vinho-escuro: #3e0907;
+    --creme: #fff7e8;
+    --dourado: #d7ab62;
+    --texto: #351311;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #fffaf1;
+    color: var(--texto);
+    font-family: Manrope, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topo-info {
+    background: var(--vinho-escuro);
+    color: #fff7e8;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+header {
+    height: 84px;
+    padding: 0 clamp(20px, 8vw, 130px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf1;
+    border-bottom: 1px solid #eadcc4;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: var(--vinho);
+    font: italic 800 34px/0.7 "Cormorant Garamond", serif;
+}
+
+.logo span {
+    display: block;
+    text-align: center;
+    font: 800 9px Manrope, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 11px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.banner {
+    min-height: 520px;
+    padding: 80px clamp(20px, 8vw, 130px);
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 78% 30%, #ad422f, transparent 32%),
+        linear-gradient(120deg, var(--vinho-escuro), var(--vinho));
+    color: var(--creme);
+}
+
+.banner-texto {
+    max-width: 680px;
+}
+
+.banner {
+    min-height: 620px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    align-items: center;
+    gap: 60px;
+}
+
+.banner-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background: #5a0c09;
+    border: 1px solid #c89151;
+    border-radius: 18px;
+    box-shadow: 18px 20px #2e0504;
+}
+
+.banner-imagem {
+    display: block;
+    width: 100%;
+    max-height: 510px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+    .banner {
+        grid-template-columns: 1fr 320px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .banner {
+        display: block;
+        min-height: auto;
+    }
+
+    .banner-visual {
+        margin-top: 45px;
+        box-shadow: 10px 12px #2e0504;
+    }
+
+    .banner-imagem {
+        max-height: none;
+    }
+}
+
+.banner {
+    position: relative;
+    min-height: 620px;
+    overflow: hidden;
+}
+
+.banner-visual {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 380px;
+    padding: 12px;
+    background: #5a0c09;
+    border: 1px solid #c89151;
+    border-radius: 18px;
+    box-shadow: 18px 20px #2e0504;
+}
+
+.banner-imagem {
+    display: block;
+    width: 100%;
+    max-height: 490px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+    .banner-visual {
+        right: 4%;
+        width: 310px;
+    }
+}
+
+@media (max-width: 560px) {
+    .banner {
+        min-height: auto;
+    }
+
+    .banner-visual {
+        position: static;
+        width: 90%;
+        margin: 45px auto 0;
+        transform: none;
+    }
+}
+
+
+.etiqueta {
+    color: #f4cd88;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+}
+
+.etiqueta-vinho {
+    color: #9b5735;
+}
+
+.banner h1,
+.titulo-secao h2,
+.contato h2 {
+    font: 800 clamp(54px, 7vw, 105px)/0.8 "Cormorant Garamond", serif;
+    letter-spacing: -3px;
+    margin: 0 0 24px;
+}
+
+.banner-texto > p:not(.etiqueta) {
+    max-width: 580px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ffeac3;
+}
+
+.botao,
+.produto button {
+    display: inline-block;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font: 800 12px Manrope, sans-serif;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botao-dourado {
+    background: var(--dourado);
+    color: var(--vinho-escuro);
+}
+
+.cardapio {
+    padding: 90px clamp(20px, 8vw, 130px);
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.titulo-secao h2 {
+    color: var(--vinho);
+    font-size: 70px;
+}
+
+.titulo-secao > p {
+    max-width: 350px;
+    line-height: 1.7;
+}
+
+.categoria {
+    font: 800 36px "Cormorant Garamond", serif;
+    color: var(--vinho);
+    border-bottom: 1px solid #e5d6bd;
+    padding-bottom: 12px;
+    margin: 45px 0 22px;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.produto {
+    background: white;
+    border: 1px solid #eddec6;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #4a1b1312;
+    transition: 0.25s;
+}
+
+.produto:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px #4a1b1322;
+}
+
+.produto img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.produto div {
+    padding: 22px;
+}
+
+.produto h4 {
+    font: 800 29px/1 "Cormorant Garamond", serif;
+    margin: 0 0 9px;
+}
+
+.produto p {
+    min-height: 49px;
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.produto strong {
+    display: block;
+    color: #087d48;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.produto button {
+    background: var(--vinho);
+    color: var(--creme);
+    margin: 16px 0 0;
+    width: 100%;
+}
+
+.produto button:hover {
+    background: #a02d22;
+}
+
+.contato {
+    padding: 75px clamp(20px, 8vw, 130px);
+    background: var(--vinho-escuro);
+    color: var(--creme);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contato h2 {
+    font-size: 64px;
+}
+
+.contato-itens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.contato-itens p {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.contato-itens b {
+    font: 800 25px "Cormorant Garamond", serif;
+    color: #f4cd88;
+}
+
+footer {
+    background: #260403;
+    color: #f3d99c;
+    text-align: center;
+    padding: 24px;
+    font: 700 24px "Cormorant Garamond", serif;
+}
+
+@media (max-width: 850px) {
+    nav {
+        display: none;
+    }
+
+    .banner {
+        min-height: 430px;
+    }
+
+    .banner h1 {
+        font-size: 65px;
+    }
+
+    .titulo-secao,
+    .contato {
+        display: block;
+    }
+
+    .titulo-secao h2 {
+        font-size: 60px;
+    }
+
+    .titulo-secao > p {
+        margin-top: 18px;
+    }
+
+    .grade-produtos,
+    .contato-itens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contato h2 {
+        font-size: 56px;
+    }
+
+    .contato-itens {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    header {
+        height: 75px;
+    }
+
+    .banner {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .banner h1 {
+        font-size: 58px;
+    }
+
+    .cardapio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 55px;
+    }
+
+    .categoria {
+        font-size: 33px;
+    }
+
+    .grade-produtos,
+    .contato-itens {
+        grid-template-columns: 1fr;
+    }
+
+    .produto h4 {
+        font-size: 31px;
+    }
+
+    .contato {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contato h2 {
+        font-size: 55px;
+    }
+}
+
+.contato-itens a {
+    color: #f4cd88;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.contato-itens a:hover {
+    color: #ffffff;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 82px;
+    height: 82px;
+    object-fit: contain;
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    display: block;
+}
+
+header {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+}
